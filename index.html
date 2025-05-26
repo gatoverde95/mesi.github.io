@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuerdOS - Optimized to the last pixel</title>
+    <link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="translations.js"></script>
+    <script src="https://itszariep.github.io/SJTSW/sjtsw.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo" class="nav-logo">
+                <span class="nav-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" id="str-menu-about">About</a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" id="downloadDropdown">
+                        <span id="str-menu-download">Download</span>
+                        <i data-lucide="chevron-down" class="dropdown-icon"></i>
+                    </button>
+                    <div class="dropdown-content" id="downloadDropdownContent">
+                        <a href="#download" class="dropdown-item" id="str-download-option1">Official Images</a>
+                        <a href="spins.html" class="dropdown-item" id="str-download-option2">Community Spins</a>
+                    </div>
+                </div>
+                <a href="https://cuerdoswiki.blogspot.com/" class="nav-link" id="str-menu-wiki">Wiki</a>
+                <a href="changelog.html" class="nav-link" id="str-changelog-nav">Changelog</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://github.com/CuerdOS" class="nav-icon">
+                    <i data-lucide="github"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                </h1>
+                <p class="hero-subtitle" id="str-slogan">Optimized to the last pixel</p>
+                <p class="hero-description" id="str-content-about-1">
+                    A GNU/Linux distribution focused on stability, efficiency and performance on computers of any range,
+                    without losing any functionality.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('download')">
+                        <i data-lucide="download"></i>
+                        <span id="str-download-now">Download Now</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <span id="str-learn-more">Learn More</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <svg viewBox="0 0 800 600" class="computer-svg">
+        <!-- Computer Base -->
+        <rect x="50" y="400" width="700" height="150" rx="20" fill="#2a2a2a" stroke="#444" stroke-width="2"/>
+        
+        <!-- Computer Screen Frame -->
+        <rect x="100" y="80" width="600" height="380" rx="15" fill="#1a1a1a" stroke="#444" stroke-width="3"/>
+        
+        <!-- Screen Bezel -->
+        <rect x="120" y="100" width="560" height="340" rx="10" fill="#000"/>
+        
+        <!-- Screen Content (Image will be placed here) -->
+        <foreignObject x="125" y="105" width="550" height="330">
+            <img src="images/cuerdos-standard.webp" alt="CuerdOS Desktop" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"/>
+        </foreignObject>
+        
+        <!-- Screen Reflection -->
+        <rect x="125" y="105" width="550" height="330" rx="8" fill="url(#screenGradient)" opacity="0.1"/>
+        
+        <!-- Keyboard -->
+        <rect x="150" y="480" width="500" height="60" rx="8" fill="#333" stroke="#555" stroke-width="1"/>
+        
+        <!-- Keyboard Keys (simplified) -->
+        <g fill="#444" stroke="#666" stroke-width="0.5">
+            <!-- Row 1 -->
+            <rect x="160" y="490" width="30" height="8" rx="2"/>
+            <rect x="195" y="490" width="30" height="8" rx="2"/>
+            <rect x="230" y="490" width="30" height="8" rx="2"/>
+            <rect x="265" y="490" width="30" height="8" rx="2"/>
+            <rect x="300" y="490" width="30" height="8" rx="2"/>
+            <rect x="335" y="490" width="30" height="8" rx="2"/>
+            <rect x="370" y="490" width="30" height="8" rx="2"/>
+            <rect x="405" y="490" width="30" height="8" rx="2"/>
+            <rect x="440" y="490" width="30" height="8" rx="2"/>
+            <rect x="475" y="490" width="30" height="8" rx="2"/>
+            <rect x="510" y="490" width="30" height="8" rx="2"/>
+            <rect x="545" y="490" width="30" height="8" rx="2"/>
+            <rect x="580" y="490" width="60" height="8" rx="2"/>
+            
+            <!-- Row 2 -->
+            <rect x="160" y="505" width="45" height="8" rx="2"/>
+            <rect x="210" y="505" width="25" height="8" rx="2"/>
+            <rect x="240" y="505" width="25" height="8" rx="2"/>
+            <rect x="270" y="505" width="25" height="8" rx="2"/>
+            <rect x="300" y="505" width="25" height="8" rx="2"/>
+            <rect x="330" y="505" width="25" height="8" rx="2"/>
+            <rect x="360" y="505" width="25" height="8" rx="2"/>
+            <rect x="390" y="505" width="25" height="8" rx="2"/>
+            <rect x="420" y="505" width="25" height="8" rx="2"/>
+            <rect x="450" y="505" width="25" height="8" rx="2"/>
+            <rect x="480" y="505" width="25" height="8" rx="2"/>
+            <rect x="510" y="505" width="25" height="8" rx="2"/>
+            <rect x="540" y="505" width="25" height="8" rx="2"/>
+            <rect x="570" y="505" width="70" height="8" rx="2"/>
+            
+            <!-- Row 3 -->
+            <rect x="160" y="520" width="55" height="8" rx="2"/>
+            <rect x="220" y="520" width="25" height="8" rx="2"/>
+            <rect x="250" y="520" width="25" height="8" rx="2"/>
+            <rect x="280" y="520" width="25" height="8" rx="2"/>
+            <rect x="310" y="520" width="25" height="8" rx="2"/>
+            <rect x="340" y="520" width="25" height="8" rx="2"/>
+            <rect x="370" y="520" width="25" height="8" rx="2"/>
+            <rect x="400" y="520" width="25" height="8" rx="2"/>
+            <rect x="430" y="520" width="25" height="8" rx="2"/>
+            <rect x="460" y="520" width="25" height="8" rx="2"/>
+            <rect x="490" y="520" width="25" height="8" rx="2"/>
+            <rect x="520" y="520" width="25" height="8" rx="2"/>
+            <rect x="550" y="520" width="90" height="8" rx="2"/>
+        </g>
+        
+        <!-- Trackpad -->
+        <rect x="350" y="555" width="100" height="60" rx="8" fill="#222" stroke="#444" stroke-width="1"/>
+        
+        <!-- Power Button -->
+        <circle cx="400" cy="470" r="4" fill="#a9b650" opacity="0.8"/>
+        
+        <!-- Brand Logo Area -->
+        <rect x="380" y="580" width="40" height="15" rx="3" fill="#333"/>
+        
+        <!-- Gradients -->
+        <defs>
+            <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:white;stop-opacity:0.3"/>
+                <stop offset="100%" style="stop-color:white;stop-opacity:0"/>
+            </linearGradient>
+        </defs>
+    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="str-title-features">Why Choose CuerdOS?</h2>
+                <p class="section-description" id="str-content-about-2">
+                    Built with performance and user experience in mind, CuerdOS delivers a modern Linux experience.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon debian-icon">
+                        <img src="images/debian.webp" alt="Debian" class="feature-img">
+                    </div>
+                    <h3 class="feature-title" id="str-title-feature-1">Debian Based</h3>
+                    <p class="feature-description" id="str-content-feature-1">
+                        Built on the rock-solid foundation of Debian, providing exceptional stability and security.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon performance-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="feature-title" id="str-title-feature-2">Optimized Performance</h3>
+                    <p class="feature-description" id="str-content-feature-2">
+                        Custom kernel optimizations and system tweaks for maximum performance on any hardware.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon modern-icon">
+                        <img src="images/sway.webp" alt="Sway" class="feature-img">
+                    </div>
+                    <h3 class="feature-title" id="str-title-feature-3">Modern Desktop</h3>
+                    <p class="feature-description" id="str-content-feature-3">
+                        Features Sway window manager with beautiful, efficient workflows and Wayland support.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon repos-icon">
+                        <i data-lucide="hard-drive"></i>
+                    </div>
+                    <h3 class="feature-title" id="str-title-feature-4">Own Repositories</h3>
+                    <p class="feature-description" id="str-content-feature-4">
+                        Access to exclusive packages and software not available in standard Debian repositories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="technical-section">
+        <div class="container">
+            <div class="technical-grid">
+                <div class="technical-content">
+                    <h2 class="technical-title" id="str-title-otherfeatures">Technical Excellence</h2>
+                    <p class="technical-description" id="str-technical-desc">
+                        CuerdOS isn't just another Linux distribution. It's a carefully crafted system with performance
+                        optimizations and modern features.
+                    </p>
+
+                    <div class="technical-features">
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-1">Bauh Store preconfigured for easy software installation</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-2">ZRam optimization for better memory management</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-3">Nala and Apt-fast for faster package management</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-4">Custom kernel with BORE scheduler and Ananicy daemon</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-5">TLP power management for optimal battery life</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-6">Pipewire audio server with low latency</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-7">Waydroid support for Android apps</span>
+                        </div>
+                        <div class="technical-feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <span id="str-content-otherfeatures-8">Optimized boot speed and system responsiveness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technical-image">
+                    <div class="technical-image-container">
+                        <img src="images/cuerdos-standard.webp" alt="CuerdOS Standard" class="technical-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="str-title-download">Download CuerdOS Cessna 1.2.1</h2>
+                <p class="section-description" id="str-content-download-1">
+                    Choose your preferred edition and start your journey with CuerdOS today.
+                </p>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="requirements-card">
+                <h3 class="requirements-title" id="str-title-tabletitle">System Requirements</h3>
+                <div class="requirements-grid">
+                    <div class="requirements-column">
+                        <h4 class="requirements-subtitle" id="str-tabletitle-minimum">Minimum</h4>
+                        <ul class="requirements-list">
+                            <li class="requirement-item">
+                                <i data-lucide="cpu"></i>
+                                <span id="str-tablecontent-mincpu">x86_64 1.00 GHz CPU</span>
+                            </li>
+                            <li class="requirement-item">
+                                <i data-lucide="memory-stick"></i>
+                                <span id="str-tablecontent-minram">1GB of RAM</span>
+                            </li>
+                            <li class="requirement-item">
+                                <i data-lucide="hard-drive"></i>
+                                <span id="str-tablecontent-mindisk">8.5GB disk storage</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="requirements-column">
+                        <h4 class="requirements-subtitle" id="str-tabletitle-recommended">Recommended</h4>
+                        <ul class="requirements-list">
+                            <li class="requirement-item">
+                                <i data-lucide="cpu"></i>
+                                <span id="str-tablecontent-reccpu">x86_64 1.00 GHz CPU</span>
+                            </li>
+                            <li class="requirement-item">
+                                <i data-lucide="memory-stick"></i>
+                                <span id="str-tablecontent-recram">2GB of RAM</span>
+                            </li>
+                            <li class="requirement-item">
+                                <i data-lucide="hard-drive"></i>
+                                <span id="str-tablecontent-recdisk">8.5GB SSD storage</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Cards -->
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="download-image">
+                        <img src="images/cuerdos-standard.webp" alt="CuerdOS Standard">
+                    </div>
+                    <div class="download-content">
+                        <h3 class="download-title" id="str-title-downloadlink-1">CuerdOS Standard</h3>
+                        <p class="download-description" id="str-content-downloadlink-1">
+                            The flagship edition featuring the Sway window manager and modern Wayland experience.
+                        </p>
+                        <div class="download-buttons">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/stable/standard/CuerdOS-1.2.1-Standard_amd64.iso/download" 
+                               class="btn btn-primary download-primary">
+                                <svg width="16" height="16" viewBox="0 0 52 52" fill="currentColor">
+                                    <use href="images/iso.svg#iso-icon"/>
+                                </svg>
+                                <span id="str-download-sourceforge">Download from Sourceforge</span>
+                            </a>
+                            <div class="download-secondary">
+                                <a href="https://archive.org/download/cuerd-os-1.2.1-standard-amd-64/CuerdOS-1.2.1-Standard_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerd-os-1.2.1-standard-amd-64/cuerd-os-1.2.1-standard-amd-64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/standard-hash.txt" class="download-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-image">
+                        <img src="images/cuerdos-legacy.webp" alt="CuerdOS Legacy">
+                    </div>
+                    <div class="download-content">
+                        <h3 class="download-title" id="str-title-downloadlink-2">CuerdOS Legacy</h3>
+                        <p class="download-description" id="str-content-downloadlink-2">
+                            Traditional desktop experience with Xfce, perfect for users who prefer familiar interfaces.
+                        </p>
+                        <div class="download-buttons">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/stable/legacy/CuerdOS-1.2.1-Legacy_amd64.iso/download" 
+                               class="btn btn-primary download-primary legacy-btn">
+                                <svg width="16" height="16" viewBox="0 0 52 52" fill="currentColor">
+                                    <use href="images/iso.svg#iso-icon"/>
+                                </svg>
+                                <span id="str-download-sourceforge-2">Download from Sourceforge</span>
+                            </a>
+                            <div class="download-secondary">
+                                <a href="https://archive.org/download/cuerd-os-1.2.1-legacy-amd-64/CuerdOS-1.2.1-Legacy_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerd-os-1.2.1-legacy-amd-64/cuerd-os-1.2.1-legacy-amd-64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/legacy-hash.txt" class="download-checksum legacy-link">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Spins -->
+            <div class="spins-section">
+                <h3 class="spins-title" id="str-spins-title">Community Spins Available</h3>
+                <p class="spins-description" id="str-spins-description">
+                    Explore alternative desktop environments created by our community
+                </p>
+                <div class="spins-image-container">
+                    <img src="images/spins.webp" alt="CuerdOS Spins" class="spins-image" onclick="window.location.href='spins.html'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo">
+                        <span class="footer-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                    </div>
+                    <p class="footer-description" id="str-footer-description">
+                        Optimized to the last pixel. A modern GNU/Linux distribution focused on performance and user experience.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading" id="str-footer-resources">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://cuerdoswiki.blogspot.com/" id="str-footer-wiki">Wiki</a></li>
+                        <li><a href="changelog.html" id="str-changelog-nav">Changelog</a></li>
+                        <li><a href="https://github.com/CuerdOS" id="str-footer-source">Source Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-heading" id="str-footer-community">Community</h4>
+                    <div class="social-links">
+                        <a href="mailto:cuerdoslinux@proton.me" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://t.me/+GibSWjFc89Q2ODU8" class="social-link">
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                        <a href="https://github.com/CuerdOS" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="str-credits">© 2024 CuerdOS Dev Team. Licensed under GNU GPL v3.</p>
+                <p class="footer-license" id="str-subtitle-logolicense">
+                    The <a href="https://github.com/CuerdOS/logo">CuerdOS logo</a> is published under
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="modern-script.js"></script>
+    <script>SJTSW_TranslatePage();</script>
+</body>
+</html>

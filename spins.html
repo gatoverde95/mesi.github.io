@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuerdOS Visuals - Community Spins</title>
+    <link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="spins-translations.js"></script>
+    <script src="https://itszariep.github.io/SJTSW/sjtsw.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-brand-link">
+                    <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo" class="nav-logo">
+                    <span class="nav-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#about" class="nav-link" id="str-menu-about">About</a>
+                <a href="index.html#download" class="nav-link" id="str-menu-download">Download</a>
+                <a href="https://cuerdoswiki.blogspot.com/" class="nav-link" id="str-menu-wiki">Wiki</a>
+                <a href="changelog.html" class="nav-link" id="str-changelog-nav">Changelog</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://github.com/CuerdOS" class="nav-icon">
+                    <i data-lucide="github"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="spins-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left"></i>
+                Back to Home
+            </a>
+
+            <div class="spins-hero">
+                <h1 class="spins-title">
+                    <span class="gradient-text-spins"><span class="cuerd">Cuerd</span><span class="os">OS</span> Visuals</span>
+                </h1>
+                <p class="spins-subtitle" id="str-subtitle-spins1">Community-driven desktop experiences</p>
+                <p class="spins-description" id="str-content-spins-1">
+                    CuerdOS Visuals are variations of the distro with alternative desktop environments to the original project
+                    and a selection of applications of their own, thus offering different ways to experience CuerdOS.
+                </p>
+            </div>
+
+            <div class="spins-logos">
+                <center><img src="images/spins/spins-logos.webp" alt="CuerdOS Spins Logos" class="spins-logos-img"></center>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spins Grid -->
+    <section class="spins-content">
+        <div class="container">
+            <div class="spins-grid">
+                <!-- Budgie -->
+                <div class="spin-item">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon budgie-icon">
+                                <img src="images/spins/budgie-logo.webp" alt="Budgie Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS Budgie</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-8">
+                            Edition with Budgie desktop environment, with an original and more familiar customization.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-budgie/CuerdOS-1.2.1-Budgie_RE_amd64.iso/download" 
+                               class="btn btn-primary spin-primary budgie-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerdos-1.2.1-budgie-re-amd64/CuerdOS-1.2.1-Budgie_RE_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerdos-1.2.1-budgie-re-amd64/cuerdos-1.2.1-budgie-re-amd64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/budgie-re-hash.txt" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container budgie-bg">
+                            <img src="images/spins/cuerdos-budgie-re.webp" alt="CuerdOS Budgie">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CinnamiX -->
+                <div class="spin-item reverse">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon cinnamon-icon">
+                                <img src="images/spins/cinnamon-logo.webp" alt="Cinnamon Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS CinnamiX</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-4">
+                            With the Cinnamon desktop environment, an edition that aims to be easy to use and user-friendly for all types of users.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-cinnamix/CuerdOS-1.2.1-CinnamiX_amd64.iso/download" 
+                               class="btn btn-primary spin-primary cinnamon-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerdos-1.2.1-cinnamix-amd64/CuerdOS-1.2.1-CinnamiX_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerdos-1.2.1-cinnamix-amd64/cuerdos-1.2.1-cinnamix-amd64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/cinnamix-hash.txt" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container cinnamon-bg">
+                            <img src="images/spins/cuerdos-cinnamix.webp" alt="CuerdOS CinnamiX">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LXQt -->
+                <div class="spin-item">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon lxqt-icon">
+                                <img src="images/spins/lxqt-logo.webp" alt="LXQt Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS LXQt</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-6">
+                            Edition with LXQt desktop environment, with an original and more familiar customization.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-lxqt/CuerdOS-1.2.1-LXQt_amd64.iso/download" 
+                               class="btn btn-primary spin-primary lxqt-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerdos-1.2.1-lxqt-amd64/CuerdOS-1.2.1-LXQt_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerdos-1.2.1-lxqt-amd64/cuerdos-1.2.1-lxqt-amd64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/lxqt-hash.txt" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container lxqt-bg">
+                            <img src="images/spins/cuerdos-lxqt.webp" alt="CuerdOS LXQt">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mate -->
+                <div class="spin-item reverse">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon mate-icon">
+                                <img src="images/spins/mate-logo.webp" alt="Mate Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS MATE</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-7">
+                            Edition with the Mate desktop environment, with a customization inspired by the ElementaryOS Pantheon desktop.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-mate/CuerdOS-1.2.1-MATE_amd64.iso/download" 
+                               class="btn btn-primary spin-primary mate-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerdos-1.2.1-mate-amd64/CuerdOS-1.2.1-MATE_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerdos-1.2.1-mate-amd64/cuerdos-1.2.1-mate-amd64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/mate-hash.txt" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container mate-bg">
+                            <img src="images/spins/cuerdos-mate.webp" alt="CuerdOS MATE">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shell -->
+                <div class="spin-item">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon shell-icon">
+                                <img src="images/spins/shell-logo.webp" alt="Shell Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS Shell</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-5">
+                            The green plane distribution together with a modified Gnome Shell, to bring it back to its classic and familiar distribution.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-shell/CuerdOS_1.2.1-Shell.iso/download" 
+                               class="btn btn-primary spin-primary shell-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerd-os-1.2-1-shell-amd-64/CuerdOS_1.2.1-Shell.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerd-os-1.2-1-shell-amd-64/cuerd-os-1.2-1-shell-amd-64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/shell-hash.txt" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container shell-bg">
+                            <img src="images/spins/cuerdos-shell.webp" alt="CuerdOS Shell">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- X3 -->
+                <div class="spin-item reverse">
+                    <div class="spin-content">
+                        <div class="spin-header">
+                            <div class="spin-icon x3-icon">
+                                <img src="images/spins/x3-logo.webp" alt="X3 Logo">
+                            </div>
+                            <h2 class="spin-name">CuerdOS X3</h2>
+                        </div>
+                        <p class="spin-description" id="str-content-downloadlink-9">
+                            An experimental image of CuerdOS that mounts the Xfce desktop and the I3 window manager, providing an experience with the comfort of a desktop environment and the fluidity of a tiling window manager.
+                        </p>
+                        <div class="spin-downloads">
+                            <a href="https://sourceforge.net/projects/cuerdos/files/community_spins/cuerdos-x3/CuerdOS-1.2-X3_amd64.iso/download" 
+                               class="btn btn-primary spin-primary x3-btn">
+                                <i data-lucide="download"></i>
+                                <span id="str-download-sourceforge"></span>
+                            </a>
+                            <div class="spin-secondary">
+                                <a href="https://archive.org/download/cuerd-os-1.2-x-3-amd-64/CuerdOS-1.2-X3_amd64.iso" 
+                                   class="btn btn-outline">Archive</a>
+                                <a href="https://archive.org/download/cuerd-os-1.2-x-3-amd-64/cuerd-os-1.2-x-3-amd-64_archive.torrent" 
+                                   class="btn btn-outline">Torrent</a>
+                            </div>
+                            <a href="checksums/x3-hash.md5" class="spin-checksum">
+                                <i data-lucide="external-link"></i>
+                                Checksums
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spin-image">
+                        <div class="spin-image-container x3-bg">
+                            <img src="images/spins/x3.webp" alt="CuerdOS X3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credits -->
+            <div class="credits-section">
+                <div class="credits-card">
+                    <h3 class="credits-title">Visuals Contributors</h3>
+                    <p class="credits-description" id="str-desc-autor">
+                        These editions were created and are mainly maintained by 
+                        <a class="element" href="https://github.com/gatoverde95">GatoVerde95</a> / <a class="element" href="https://github.com/weikis336">Weikis</a>
+                        and other community members.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo">
+                        <span class="footer-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Optimized to the last pixel. A modern GNU/Linux distribution focused on performance and user experience.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://cuerdoswiki.blogspot.com/">Wiki</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="https://github.com/CuerdOS">Source Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-heading">Community</h4>
+                    <div class="social-links">
+                        <a href="mailto:cuerdoslinux@proton.me" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://t.me/+GibSWjFc89Q2ODU8" class="social-link">
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                        <a href="https://github.com/CuerdOS" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="str-credits">© 2024 CuerdOS Dev Team. Licensed under GNU GPL v3.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="modern-script.js"></script>
+    <script>SJTSW_TranslatePage();</script>
+</body>
+</html>

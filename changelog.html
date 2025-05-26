@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuerdOS | Changelog</title>
+    <link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="translations.js"></script>
+    <script src="https://itszariep.github.io/SJTSW/sjtsw.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-brand-link">
+                    <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo" class="nav-logo">
+                    <span class="nav-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#about" class="nav-link" id="str-menu-about">About</a>
+                <a href="index.html#download" class="nav-link" id="str-menu-download">Download</a>
+                <a href="https://cuerdoswiki.blogspot.com/" class="nav-link" id="str-menu-wiki">Wiki</a>
+                <a href="#changelog" class="nav-link" id="str-changelog-nav">Changelog</a>
+                <a href="#errors" class="nav-link" id="str-errors-nav">Errors</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://github.com/CuerdOS" class="nav-icon">
+                    <i data-lucide="github"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="changelog-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left"></i>
+                <span id="str-back-home">Back to Home</span>
+            </a>
+
+            <div class="changelog-hero">
+                <h1 class="changelog-title">
+                    <span class="gradient-text" id="str-changelog-title">Changelog</span>
+                </h1>
+                <p class="changelog-subtitle" id="str-changelog-subtitle">Release history and bug reports</p>
+                <p class="changelog-description" id="str-changelog-description">
+                    Track the evolution of CuerdOS through our detailed changelog and known issues.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog Content -->
+    <section id="changelog" class="changelog-content">
+        <div class="container">
+            <div class="changelog-section">
+                <h2 class="section-title">
+                    <i data-lucide="git-commit"></i>
+                    <span id="str-release-history">Release History</span>
+                </h2>
+
+                <!-- Cessna 1.2.1 -->
+                <div class="changelog-item">
+                    <div class="changelog-header-item">
+                        <h3 class="changelog-version">Cessna 1.2.1</h3>
+                        <span class="changelog-badge latest" id="str-latest-badge">Latest</span>
+                    </div>
+                    <div class="changelog-changes">
+                        <ul class="changelog-list">
+                            <li class="changelog-change">
+                                <i data-lucide="arrow-up"></i>
+                                <span id="str-change-1-2-1-1">Base updated to Debian 12.9</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="package"></i>
+                                <span id="str-change-1-2-1-2">Migration to CuerdOS own repositories</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="globe"></i>
+                                <span id="str-change-1-2-1-3">Brave web browser set as default, Firefox stable still available in repositories</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="bell"></i>
+                                <span id="str-change-1-2-1-4">CuerdOS Standard now features Sway Notification Center as new notification manager</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="clipboard"></i>
+                                <span id="str-change-1-2-1-5">CuerdOS Legacy now includes Clipman plugin for Xfce4 by default</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="download"></i>
+                                <span id="str-change-1-2-1-6">Firmware updates coming soon via "apt update"</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="x-circle"></i>
+                                <span id="str-change-1-2-1-7">Select-Install deprecated due to discontinuation of NHS kernel package</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="settings"></i>
+                                <span id="str-change-1-2-1-8">Improved Calamares installer configuration, facilitating selection of different file systems without manual partitioning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cessna 1.2 -->
+                <div class="changelog-item">
+                    <div class="changelog-header-item">
+                        <h3 class="changelog-version">Cessna 1.2</h3>
+                    </div>
+                    <div class="changelog-changes">
+                        <ul class="changelog-list">
+                            <li class="changelog-change">
+                                <i data-lucide="smartphone"></i>
+                                <span id="str-change-1-2-1">Waydroid support enabled</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="cpu"></i>
+                                <span id="str-change-1-2-2">Kernel with patch to improve performance (BORE and Ananicy service)</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="zap"></i>
+                                <span id="str-change-1-2-3">Optimized system boot speed</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="download"></i>
+                                <span id="str-change-1-2-4">Select-install installer, for kernel selection (and ISO Standard window manager)</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="play"></i>
+                                <span id="str-change-1-2-5">New animation from Plymouth, CuerdOS-simple, returning to the origins where less is more</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="palette"></i>
+                                <span id="str-change-1-2-6">Improved theme consistency between QT programs in GTK environments and vice versa</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="monitor"></i>
+                                <span id="str-change-1-2-7">The Kisak Mesa drivers with their repository are set by default</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="gpu"></i>
+                                <span id="str-change-1-2-8">Default Nvidia driver installer in both versions (Legacy and Standard)</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="x-circle"></i>
+                                <span id="str-change-1-2-9">Preload deprecated to find other more consistent optimizations</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="package"></i>
+                                <span id="str-change-1-2-10">Changes in the system software suite</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cessna 1.1 -->
+                <div class="changelog-item">
+                    <div class="changelog-header-item">
+                        <h3 class="changelog-version">Cessna 1.1</h3>
+                    </div>
+                    <div class="changelog-changes">
+                        <ul class="changelog-list">
+                            <li class="changelog-change">
+                                <i data-lucide="hard-drive"></i>
+                                <span id="str-change-1-1-1">BTRFS file system support (already added in the latest CuerdOS 1.0 maintenance ISO)</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="hard-drive"></i>
+                                <span id="str-change-1-1-2">BTRFS is now the default file system through the Calamares installer</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="refresh-cw"></i>
+                                <span id="str-change-1-1-3">Image updated with the latest updates</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="cpu"></i>
+                                <span id="str-change-1-1-4">Xanmod kernel support dropped for new CuerdOS kernel, version 6.6.23</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="zap"></i>
+                                <span id="str-change-1-1-5">Preload is installed and configured by default</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="settings"></i>
+                                <span id="str-change-1-1-6">I3 and Sway configurations moved to separate packages</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="image"></i>
+                                <span id="str-change-1-1-7">New wallpapers available, plus community wallpapers package</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="package"></i>
+                                <span id="str-change-1-1-8">New packages available in the repository</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="pin"></i>
+                                <span id="str-change-1-1-9">Some programs pinned to taskbar in CuerdOS-Legacy</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="plus-circle"></i>
+                                <span id="str-change-1-1-10">New Welcome screen with distribution information</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cessna 1.0 -->
+                <div class="changelog-item">
+                    <div class="changelog-header-item">
+                        <h3 class="changelog-version">Cessna 1.0</h3>
+                    </div>
+                    <div class="changelog-changes">
+                        <ul class="changelog-list">
+                            <li class="changelog-change">
+                                <i data-lucide="arrow-up"></i>
+                                <span id="str-change-1-0-1">ISO updated to Debian 12.4</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="terminal"></i>
+                                <span id="str-change-1-0-2">Changed LS and CAT to LSD and BAT for improved terminal experience</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="settings"></i>
+                                <span id="str-change-1-0-3">New system administration programs: cuerdos-control-panel, cups-switch and setup-repos</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="cpu"></i>
+                                <span id="str-change-1-0-4">Changed to Xanmod LTS V1 kernel for better performance</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="gamepad-2"></i>
+                                <span id="str-change-1-0-5">Added retro games: Doom, Tetris and Pacman from DosBox</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="palette"></i>
+                                <span id="str-change-1-0-6">New color theme for Gedit</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="monitor"></i>
+                                <span id="str-change-1-0-7">Updated Sway and I3 configurations</span>
+                            </li>
+                            <li class="changelog-change">
+                                <i data-lucide="plus-circle"></i>
+                                <span id="str-change-1-0-8">New Xfce edition called CuerdOS-Legacy</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Errors Section -->
+    <section id="errors" class="errors-section">
+        <div class="container">
+            <div class="errors-content">
+                <h2 class="section-title">
+                    <i data-lucide="alert-triangle"></i>
+                    <span id="str-launch-errors">Launch Errors</span>
+                </h2>
+
+                <!-- Cessna 1.1 Errors -->
+                <div class="error-item">
+                    <div class="error-header">
+                        <h3 class="error-version">Cessna 1.1</h3>
+                    </div>
+                    <div class="error-list">
+                        <div class="error-bug">
+                            <div class="error-description">
+                                <i data-lucide="bug"></i>
+                                <span id="str-error-1-1-1">The Welcome-autostart script cannot disable the automatic start of CuerdOS-Yelena.</span>
+                            </div>
+                            <div class="error-status fixed">
+                                <i data-lucide="check-circle"></i>
+                                <span id="str-error-1-1-1-fix">Fixed in the 2024-04-06 ISO and fixable by updating the system via apt.</span>
+                            </div>
+                        </div>
+                        <div class="error-bug">
+                            <div class="error-description">
+                                <i data-lucide="bug"></i>
+                                <span id="str-error-1-1-2">In neofetch Sway comes up as DE, even if you are using any other desktop environment.</span>
+                            </div>
+                            <div class="error-status fixed">
+                                <i data-lucide="check-circle"></i>
+                                <span id="str-error-1-1-2-fix">Fixed in ISO of 2024-04-06.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cessna 1.0 Errors -->
+                <div class="error-item">
+                    <div class="error-header">
+                        <h3 class="error-version">Cessna 1.0</h3>
+                    </div>
+                    <div class="error-list">
+                        <div class="error-bug">
+                            <div class="error-description">
+                                <i data-lucide="bug"></i>
+                                <span id="str-error-1-0-1">Pre-installed video game apps are also in the "System" category.</span>
+                            </div>
+                            <div class="error-status fixed">
+                                <i data-lucide="check-circle"></i>
+                                <span id="str-error-1-0-1-fix">Fixed by upgrading the system.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cessna Release Candidate Errors -->
+                <div class="error-item">
+                    <div class="error-header">
+                        <h3 class="error-version">Cessna Release Candidate</h3>
+                    </div>
+                    <div class="error-list">
+                        <div class="error-bug">
+                            <div class="error-description">
+                                <i data-lucide="bug"></i>
+                                <span id="str-error-rc-1">ISO will not load on some UEFI systems.</span>
+                            </div>
+                            <div class="error-status fixed">
+                                <i data-lucide="check-circle"></i>
+                                <span id="str-error-rc-1-fix">Fixed in the build 231125.</span>
+                            </div>
+                        </div>
+                        <div class="error-bug">
+                            <div class="error-description">
+                                <i data-lucide="bug"></i>
+                                <span id="str-error-rc-2">The "linux-headers-amd64" package disappears after system installation.</span>
+                            </div>
+                            <div class="error-status open">
+                                <i data-lucide="alert-circle"></i>
+                                <span id="str-error-rc-2-status">Known issue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/cuerdos_logo.webp" alt="CuerdOS Logo">
+                        <span class="footer-title"><span class="cuerd">Cuerd</span><span class="os">OS</span></span>
+                    </div>
+                    <p class="footer-description" id="str-footer-description">
+                        Optimized to the last pixel. A modern GNU/Linux distribution focused on performance and user experience.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading" id="str-footer-resources">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://cuerdoswiki.blogspot.com/" id="str-footer-wiki">Wiki</a></li>
+                        <li><a href="index.html" id="str-footer-home">Home</a></li>
+                        <li><a href="https://github.com/CuerdOS" id="str-footer-source">Source Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-heading" id="str-footer-community">Community</h4>
+                    <div class="social-links">
+                        <a href="mailto:cuerdoslinux@proton.me" class="social-link">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://t.me/+GibSWjFc89Q2ODU8" class="social-link">
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                        <a href="https://github.com/CuerdOS" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="str-credits">© 2024 CuerdOS Dev Team. Licensed under GNU GPL v3.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="modern-script.js"></script>
+    <script>SJTSW_TranslatePage();</script>
+</body>
+</html>
